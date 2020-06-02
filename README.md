@@ -1,6 +1,6 @@
 # CosmicEye-IOS
 
-TestFlight version 1.02(10) 
+TestFlight Version 1.02(10) 
 
 Changes included:
 

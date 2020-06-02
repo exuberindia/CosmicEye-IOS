@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gua-tR-r3A" customClass="NoDataView" customModule="Cosmic_Eye" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t98-F3-fso">
+                    <rect key="frame" x="16" y="16" width="343" height="150"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="error_no_data.png" translatesAutoresizingMaskIntoConstraints="NO" id="hQH-lB-FPh">
+                            <rect key="frame" x="135.5" y="8" width="72" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="BKy-rP-GmK"/>
+                                <constraint firstAttribute="height" constant="72" id="bpg-ly-raX"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empty Text" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nte-7B-gGV">
+                            <rect key="frame" x="8" y="104" width="327" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="Pez-Nn-Mce"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                            <color key="textColor" red="0.24313725489999999" green="0.2470588235" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="6Gs-wU-dtu"/>
+                        <constraint firstItem="Nte-7B-gGV" firstAttribute="top" secondItem="hQH-lB-FPh" secondAttribute="bottom" constant="24" id="EBy-e1-KMg"/>
+                        <constraint firstAttribute="trailing" secondItem="Nte-7B-gGV" secondAttribute="trailing" constant="8" id="H37-cj-bqc"/>
+                        <constraint firstItem="Nte-7B-gGV" firstAttribute="leading" secondItem="t98-F3-fso" secondAttribute="leading" constant="8" id="V69-dN-dHe"/>
+                        <constraint firstItem="hQH-lB-FPh" firstAttribute="centerX" secondItem="t98-F3-fso" secondAttribute="centerX" id="a6K-MD-EYa"/>
+                        <constraint firstItem="hQH-lB-FPh" firstAttribute="top" secondItem="t98-F3-fso" secondAttribute="top" constant="8" id="fK6-4j-HiU"/>
+                        <constraint firstAttribute="bottom" secondItem="Nte-7B-gGV" secondAttribute="bottom" constant="24" id="ntD-Tr-2LG"/>
+                        <constraint firstItem="Nte-7B-gGV" firstAttribute="top" secondItem="hQH-lB-FPh" secondAttribute="bottom" constant="24" id="vCS-N6-0GF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="t98-F3-fso" firstAttribute="centerY" secondItem="gua-tR-r3A" secondAttribute="centerY" id="2tr-uE-WTz"/>
+                <constraint firstItem="knT-K0-UC1" firstAttribute="trailing" secondItem="t98-F3-fso" secondAttribute="trailing" constant="16" id="6Ob-GT-IBK"/>
+                <constraint firstItem="t98-F3-fso" firstAttribute="centerX" secondItem="gua-tR-r3A" secondAttribute="centerX" id="FMM-1g-Pii"/>
+                <constraint firstItem="t98-F3-fso" firstAttribute="leading" secondItem="knT-K0-UC1" secondAttribute="leading" constant="16" id="cXs-he-fFU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="knT-K0-UC1"/>
+            <connections>
+                <outlet property="emptyText" destination="Nte-7B-gGV" id="68m-UD-yFE"/>
+                <outlet property="errorImage" destination="hQH-lB-FPh" id="dtM-1R-6kt"/>
+            </connections>
+            <point key="canvasLocation" x="52.898550724637687" y="-12.723214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="error_no_data.png" width="96" height="96"/>
+    </resources>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ynB-fu-zDE" customClass="ServerErrorView" customModule="Cosmic_Eye" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwb-GL-Uq1">
+                    <rect key="frame" x="16" y="16" width="343" height="198.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="error_server.png" translatesAutoresizingMaskIntoConstraints="NO" id="IuZ-rz-lnr">
+                            <rect key="frame" x="135.5" y="8" width="72" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="72" id="314-4o-KCL"/>
+                                <constraint firstAttribute="width" constant="72" id="Abp-4z-G7w"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Server Error" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOi-8A-lvm">
+                            <rect key="frame" x="8" y="104" width="327" height="22.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="Nfm-3Y-5dt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                            <color key="textColor" red="0.24313725490196078" green="0.24705882352941178" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LR4-tF-6ae">
+                            <rect key="frame" x="89" y="150.5" width="165" height="40"/>
+                            <color key="backgroundColor" red="0.31764705879999999" green="0.1764705882" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="165" id="oVN-cS-Dus"/>
+                                <constraint firstAttribute="height" constant="40" id="wfm-r0-Q3V"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                            <state key="normal" title="Try Again">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="IuZ-rz-lnr" firstAttribute="top" secondItem="cwb-GL-Uq1" secondAttribute="top" constant="8" id="2vZ-UC-oaq"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="186" id="7jU-bG-xfR"/>
+                        <constraint firstItem="pOi-8A-lvm" firstAttribute="top" secondItem="IuZ-rz-lnr" secondAttribute="bottom" constant="24" id="Abk-5s-jkf"/>
+                        <constraint firstItem="LR4-tF-6ae" firstAttribute="top" secondItem="pOi-8A-lvm" secondAttribute="bottom" constant="24" id="Fvn-oJ-pOx"/>
+                        <constraint firstAttribute="trailing" secondItem="pOi-8A-lvm" secondAttribute="trailing" constant="8" id="JKD-nj-6lR"/>
+                        <constraint firstItem="LR4-tF-6ae" firstAttribute="centerX" secondItem="cwb-GL-Uq1" secondAttribute="centerX" id="Qqb-cY-AlA"/>
+                        <constraint firstItem="pOi-8A-lvm" firstAttribute="top" secondItem="IuZ-rz-lnr" secondAttribute="bottom" constant="24" id="WnP-Yv-aGP"/>
+                        <constraint firstItem="pOi-8A-lvm" firstAttribute="leading" secondItem="cwb-GL-Uq1" secondAttribute="leading" constant="8" id="Xi0-xB-GOe"/>
+                        <constraint firstItem="IuZ-rz-lnr" firstAttribute="centerX" secondItem="cwb-GL-Uq1" secondAttribute="centerX" id="lMM-et-McP"/>
+                        <constraint firstAttribute="bottom" secondItem="LR4-tF-6ae" secondAttribute="bottom" constant="8" id="vH3-Or-bEV"/>
+                        <constraint firstItem="LR4-tF-6ae" firstAttribute="top" secondItem="pOi-8A-lvm" secondAttribute="bottom" constant="24" id="vMQ-u7-7wJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="cwb-GL-Uq1" firstAttribute="centerX" secondItem="ynB-fu-zDE" secondAttribute="centerX" id="Fnb-S1-MTQ"/>
+                <constraint firstItem="cwb-GL-Uq1" firstAttribute="leading" secondItem="z6m-T7-YAg" secondAttribute="leading" constant="16" id="Rrn-H9-8wB"/>
+                <constraint firstItem="cwb-GL-Uq1" firstAttribute="centerY" secondItem="ynB-fu-zDE" secondAttribute="centerY" id="Xj1-RO-KmU"/>
+                <constraint firstItem="z6m-T7-YAg" firstAttribute="trailing" secondItem="cwb-GL-Uq1" secondAttribute="trailing" constant="16" id="lgN-N2-QCC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="z6m-T7-YAg"/>
+            <connections>
+                <outlet property="errorText" destination="pOi-8A-lvm" id="GiP-2L-fXf"/>
+                <outlet property="tryAgainClick" destination="LR4-tF-6ae" id="lAc-SD-78j"/>
+            </connections>
+            <point key="canvasLocation" x="2.3999999999999999" y="15.742128935532236"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="error_server.png" width="96" height="96"/>
+    </resources>
+</document>

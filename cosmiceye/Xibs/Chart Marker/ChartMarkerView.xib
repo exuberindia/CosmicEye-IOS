@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.otf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="5hz-vY-zL3" customClass="ChartMarkerView" customModule="cosmiceye" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="132" height="134"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ji-BV-F1y">
+                    <rect key="frame" x="0.0" y="0.0" width="132" height="90"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Occupancy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu8-mO-aZM">
+                            <rect key="frame" x="8" y="10" width="116" height="19"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                            <color key="textColor" red="0.24313725490196078" green="0.24705882352941178" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="92 Seats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYk-eG-q76">
+                            <rect key="frame" x="8" y="34" width="116" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                            <color key="textColor" red="0.31764705879999999" green="0.1764705882" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaA-6r-RAe">
+                            <rect key="frame" x="8" y="59" width="116" height="19"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <string key="text">23 Nov, 01:00 PM
+</string>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                            <color key="textColor" red="0.24313725489999999" green="0.2470588235" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="Vxx-sK-FdD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qI4-Zi-E7c">
+                    <rect key="frame" x="65.5" y="90" width="1" height="20"/>
+                    <color key="backgroundColor" red="0.61960784313725492" green="0.62745098039215685" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="9Mu-gS-9yQ"/>
+                        <constraint firstAttribute="width" constant="1" id="CLl-SS-9rm"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ns-c9-xgb">
+                    <rect key="frame" x="54" y="110" width="24" height="24"/>
+                    <color key="backgroundColor" red="0.31764705879999999" green="0.1764705882" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="0Ov-j8-nR3"/>
+                        <constraint firstAttribute="height" constant="24" id="OTl-jt-kQC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6Ji-BV-F1y" firstAttribute="trailing" secondItem="OyA-Fa-YTu" secondAttribute="trailing" id="07H-6F-cKT"/>
+                <constraint firstItem="qI4-Zi-E7c" firstAttribute="top" secondItem="5hz-vY-zL3" secondAttribute="top" constant="90" id="4X6-pf-seh"/>
+                <constraint firstItem="7ns-c9-xgb" firstAttribute="top" secondItem="6Ji-BV-F1y" secondAttribute="bottom" constant="20" id="C8m-it-CiK"/>
+                <constraint firstItem="6Ji-BV-F1y" firstAttribute="top" secondItem="5hz-vY-zL3" secondAttribute="top" id="Do7-Kf-gO2"/>
+                <constraint firstAttribute="bottom" secondItem="qI4-Zi-E7c" secondAttribute="bottom" constant="24" id="Ezs-bn-6re"/>
+                <constraint firstItem="7ns-c9-xgb" firstAttribute="bottom" secondItem="OyA-Fa-YTu" secondAttribute="bottom" id="Wu5-Pn-eSP"/>
+                <constraint firstItem="qI4-Zi-E7c" firstAttribute="centerX" secondItem="5hz-vY-zL3" secondAttribute="centerX" id="cr3-VD-7Do"/>
+                <constraint firstItem="6Ji-BV-F1y" firstAttribute="leading" secondItem="OyA-Fa-YTu" secondAttribute="leading" id="h7W-g1-7nS"/>
+                <constraint firstItem="qI4-Zi-E7c" firstAttribute="top" secondItem="6Ji-BV-F1y" secondAttribute="bottom" id="wGr-IQ-ZDN"/>
+                <constraint firstItem="7ns-c9-xgb" firstAttribute="centerX" secondItem="5hz-vY-zL3" secondAttribute="centerX" id="wNX-15-eSM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="OyA-Fa-YTu"/>
+            <connections>
+                <outlet property="markerBubbleBackground" destination="7ns-c9-xgb" id="aJ2-zD-GdP"/>
+                <outlet property="markerContentBackground" destination="6Ji-BV-F1y" id="PYo-aM-D8x"/>
+                <outlet property="occupancyDateTime" destination="YaA-6r-RAe" id="Rwp-jv-52H"/>
+                <outlet property="occupancySeats" destination="VYk-eG-q76" id="Fb5-wa-vLe"/>
+            </connections>
+            <point key="canvasLocation" x="-376.81159420289856" y="-4.6875"/>
+        </view>
+    </objects>
+</document>

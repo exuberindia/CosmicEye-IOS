@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>581506308612-o0ejj9ufl84jab7qo1a1rjfj5kbpdeqg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.581506308612-o0ejj9ufl84jab7qo1a1rjfj5kbpdeqg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCm9q7xkVWthk6eWWq2Svd0A7yBFNpKlM4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>581506308612</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>in.exuber.cosmiceyeapp</string>
+	<key>PROJECT_ID</key>
+	<string>cosmiceye-test-notification</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cosmiceye-test-notification.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:581506308612:ios:0b8d717b2f78b634ecb351</string>
+	<key>DATABASE_URL</key>
+	<string>https://cosmiceye-test-notification.firebaseio.com</string>
+</dict>
+</plist>

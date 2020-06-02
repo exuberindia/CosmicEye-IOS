@@ -1,0 +1,6 @@
+framework module Pods_cosmiceye_cosmiceyeUITests {
+  umbrella header "Pods-cosmiceye-cosmiceyeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

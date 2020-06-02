@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8L7-nH-cWs" customClass="NoInternetView" customModule="Cosmic_Eye" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufq-rX-pad">
+                    <rect key="frame" x="16" y="16" width="343" height="198.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="error_internet.png" translatesAutoresizingMaskIntoConstraints="NO" id="hqD-Pc-2Ws">
+                            <rect key="frame" x="8" y="8" width="327" height="88"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="88" id="D3n-72-yAz"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Connection" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBd-xm-bXY">
+                            <rect key="frame" x="8" y="104" width="327" height="22.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="K22-xu-Cb1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                            <color key="textColor" red="0.24313725489999999" green="0.2470588235" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hB3-Ca-r8x">
+                            <rect key="frame" x="89" y="150.5" width="165" height="40"/>
+                            <color key="backgroundColor" red="0.31764705879999999" green="0.1764705882" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="165" id="foR-jM-15d"/>
+                                <constraint firstAttribute="height" constant="40" id="jjF-h2-seu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                            <state key="normal" title="Try Again">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="hB3-Ca-r8x" firstAttribute="top" secondItem="NBd-xm-bXY" secondAttribute="bottom" constant="24" id="8BT-gl-xT4"/>
+                        <constraint firstItem="hB3-Ca-r8x" firstAttribute="centerX" secondItem="ufq-rX-pad" secondAttribute="centerX" id="Jgc-a2-HSr"/>
+                        <constraint firstItem="hB3-Ca-r8x" firstAttribute="top" secondItem="NBd-xm-bXY" secondAttribute="bottom" constant="24" id="KS1-5X-Wha"/>
+                        <constraint firstItem="hqD-Pc-2Ws" firstAttribute="leading" secondItem="ufq-rX-pad" secondAttribute="leading" constant="8" id="Lfl-cK-7uO"/>
+                        <constraint firstItem="hqD-Pc-2Ws" firstAttribute="centerX" secondItem="ufq-rX-pad" secondAttribute="centerX" id="Spc-Rw-M50"/>
+                        <constraint firstAttribute="bottom" secondItem="hB3-Ca-r8x" secondAttribute="bottom" constant="8" id="TNq-nI-DXy"/>
+                        <constraint firstItem="hqD-Pc-2Ws" firstAttribute="top" secondItem="ufq-rX-pad" secondAttribute="top" constant="8" id="TWs-Pe-4gf"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="186" id="UkF-k7-Dkm"/>
+                        <constraint firstAttribute="trailing" secondItem="hqD-Pc-2Ws" secondAttribute="trailing" constant="8" id="Y4l-Sx-6qn"/>
+                        <constraint firstAttribute="trailing" secondItem="NBd-xm-bXY" secondAttribute="trailing" constant="8" id="gGN-Kh-Vu7"/>
+                        <constraint firstItem="NBd-xm-bXY" firstAttribute="leading" secondItem="ufq-rX-pad" secondAttribute="leading" constant="8" id="gS2-7d-4DT"/>
+                        <constraint firstItem="NBd-xm-bXY" firstAttribute="top" secondItem="hqD-Pc-2Ws" secondAttribute="bottom" constant="8" id="jpW-lY-wN4"/>
+                        <constraint firstItem="NBd-xm-bXY" firstAttribute="top" secondItem="hqD-Pc-2Ws" secondAttribute="bottom" constant="8" id="nZ5-aq-hc1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ufq-rX-pad" firstAttribute="centerY" secondItem="8L7-nH-cWs" secondAttribute="centerY" id="0Y1-sF-a7H"/>
+                <constraint firstItem="ufq-rX-pad" firstAttribute="centerX" secondItem="8L7-nH-cWs" secondAttribute="centerX" id="9cq-wx-a7I"/>
+                <constraint firstItem="ufq-rX-pad" firstAttribute="leading" secondItem="uHy-dy-Qam" secondAttribute="leading" constant="16" id="ICx-jh-9DL"/>
+                <constraint firstItem="uHy-dy-Qam" firstAttribute="trailing" secondItem="ufq-rX-pad" secondAttribute="trailing" constant="16" id="W0N-ay-RlS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="uHy-dy-Qam"/>
+            <connections>
+                <outlet property="errorText" destination="NBd-xm-bXY" id="dQV-nV-BKF"/>
+                <outlet property="tryAgainClick" destination="hB3-Ca-r8x" id="vli-mf-zZR"/>
+            </connections>
+            <point key="canvasLocation" x="2.3999999999999999" y="15.292353823088456"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="error_internet.png" width="96" height="96"/>
+    </resources>
+</document>
